@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <br>
+  <br>
+  <div class="row">
+    <form id='form1'>
+      <div class="row">
+        <div class="input-field col s10 offset-s1">
+          <textarea id="textarea1" class="materialize-textarea" placeholder="Paragraph to summarize"></textarea><button class="btn waves-effect waves-light" id="summary" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <div class="row">
+  	<div class="col s12 center">
+  	<h5 id="head1"> Extractive Summary </h5>
+  	<p id='summary1' class='center col s10 offset-s1'></p>
+    <br>
+    <h5 id="head1"> Abstractive Summary </h5>
+    <p id='summary2' class='center col s10 offset-s1'></p>
+  </div>
+</div>
+
+{% endblock %}

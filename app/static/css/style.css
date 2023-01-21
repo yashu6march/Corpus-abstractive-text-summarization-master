@@ -1,0 +1,37 @@
+.nav-extended {
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.brand-logo {
+	color: #000000 !important;
+}
+
+.active {
+	background-color: white !important;
+	color: black !important;
+	font-weight: bolder;
+	border-bottom: 2px solid black !important;
+}
+
+.tab {
+	background-color: white !important;
+}
+
+.tab a {
+	color: black !important;
+}
+
+#head1 {
+	font-weight: bold;
+}
+
+#id1 span {
+	color: black !important;
+	width: 100%;
+}
+
+#id1 input:checked + span {
+	font-weight: bold;
+	background-color: #ebe8d5;
+}

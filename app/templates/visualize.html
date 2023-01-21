@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<div class="row">
+  <div class="col s2">
+    <form action="#" id='id1'>
+        <p>
+          <label>
+            <input class="with-gap" name="dataset" type="radio" value='cnn'/>
+            <span>CNN_DAILYMAIL</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="with-gap" name="dataset" type="radio" value='giga'/>
+            <span>GIGAWORD</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="with-gap" name="dataset" type="radio" value='free'/>
+            <span>FREE PRESS JOURNAL</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input class="with-gap" name="dataset" type="radio" value='hindustan'/>
+            <span>HINDUSTAN TIMES</span>
+          </label>
+        </p>
+    </form>
+    <p>
+      <button class="btn waves-effect waves-light col s12" id="button2" type="submit" name="action">Compare Datasets</button>
+    </p>
+    </div>
+    <div class="col s10">
+    <table id="table1">
+    </table>
+    </div>
+    </div>
+    <br>
+    <div class='row'>
+      <img class = 'col s4' onerror="this.style.display = 'none'" id='img1'>
+      <img class = 'col s4' onerror="this.style.display = 'none'" id='img2'>
+      <img class = 'col s4' onerror="this.style.display = 'none'" id='img3'>
+    </div>
+    <div class='row'>
+      <img class = 'col s4 offset-s1' onerror="this.style.display = 'none'" id='img4'>
+      <img class = 'col s4 offset-s1' onerror="this.style.display = 'none'" id='img5'>
+    </div>
+    <script src='{{ url_for("static", filename = "js/visualize.js")}}'></script>
+{% endblock %}
